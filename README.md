@@ -1,98 +1,75 @@
-# A full stack Inventory management system
+# Inventory Management System
 
-### Live Site: https://inventory-navy.vercel.app
+A web app to help you manage your products, sales, purchases, and sellers — all in one place.
 
-<!-- ### Backend Server: https://inventory-420.vercel.app -->
+> ⚠️ **Note:** The live site is currently not available. You'll need to run it locally (see instructions below).
 
-### Technologies
+---
 
-- **_Backend:_** TypeScript, Node.js, express.js, mongoDB, mongoose, zod
-- **_Frontend:_** TypeScript, React, Redux-toolkit, Ant-design, zod, recharts, react-hook-form, sweetalert2, react-router-dom
+## Built With
 
-# Features
+- **Backend:** Node.js, Express, MongoDB
+- **Frontend:** React, Redux, Ant Design, Recharts
 
-1. Authentication - Register new account and login into existing account
-2. Manage and update own profile page and change password
-3. Create -
-   - Create new product with various information
-   - Create Seller
-   - Create Product Category
-   - Create Product Brand
-4. Manage product -
-   - View All Product of login user
-   - filter and search using different fields
-   - pagination
-   - update existing product
-   - delete existing product
-   - create new variant of product
-   - sell that product
-5. Manage sale -
-   - View all sale with pagination
-   - update sale data
-   - delete sale data
-6. Manage seller -
-   - View all seller with pagination
-   - update seller data
-   - delete seller data
-7. Manage purchase -
-   - View all purchase with pagination
-   - update purchase data
-   - delete purchase data
-8. Sale history - View sales history categorized by:
-   - Yearly
-   - Monthly
-   - Weekly
-   - Daily
+---
 
-# Pages
+## What You Can Do
 
-<img src='./asset/1.png'>
-<img src='./asset/2.png'>
-<img src='./asset/3.png'>
-<img src='./asset/4.png'>
-<img src='./asset/5.png'>
+- **Sign up / Log in** — Create an account or log into an existing one
+- **Edit your profile** — Update your info or change your password
+- **Products** — Add, edit, delete, search, and filter your products. You can also create product variants and record sales
+- **Sales** — View, update, or delete sale records
+- **Purchases** — View, update, or delete purchase records
+- **Sellers** — Add and manage your sellers
+- **Categories & Brands** — Organize products by category and brand
+- **Sales History** — See a breakdown of your sales by day, week, month, or year
 
-### How to run application locally
+---
 
-1. Create a `.env` file to `client` folder and add the environment variable
+## How to Run It Locally
 
-```bash
-   VITE_BASE_URL=http://localhost:8000/api/v1
-```
+### 1. Set up the backend (server)
 
-2. Create a `.env` file to `server` folder and add the environment variable
-
-```bash
-   NODE_ENV=dev
-   PORT=8000
-   DATABASE_URL=  #### use your local mongodb URI or mongodb atlas URI
-   JWT_SECRET=your_secret_key
-```
-
-3. Install the dependencies and run backend
-
-```bash
-
-   cd client # or go to server folder and open the terminal in this directory
-
-   npm install
-
-   # then
-
-   npm run dev
+Go into the `server` folder and create a file called `.env` with the following:
 
 ```
+NODE_ENV=dev
+PORT=8000
+DATABASE_URL=your_mongodb_connection_string
+JWT_SECRET=any_secret_word_you_choose
+```
 
-4. Install the dependencies and run frontend
+Then install and start the backend:
 
 ```bash
+cd server
+npm install
+npm run dev
+```
 
-   cd client # or go to client folder and open the terminal in this directory
+### 2. Set up the frontend (client)
 
-   npm install
-
-   # then
-
-   npm run dev
+Go into the `client` folder and create a file called `.env` with the following:
 
 ```
+VITE_BASE_URL=http://localhost:8000/api/v1
+```
+
+Then install and start the frontend:
+
+```bash
+cd client
+npm install
+npm run dev
+```
+
+### 3. Open the app
+
+Once both are running, open your browser and go to:
+```
+http://localhost:5173
+```
+
+---
+
+> 💡 **Tip:** You'll need [Node.js](https://nodejs.org) and either a local MongoDB installation or a free [MongoDB Atlas](https://www.mongodb.com/atlas) account to get started.
