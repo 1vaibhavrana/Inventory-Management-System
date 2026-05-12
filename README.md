@@ -13,7 +13,7 @@ A web app to help you manage your products, sales, purchases, and sellers — al
 
 
 ---
-## 3. Live Link
+## Live Link
 
 To view the website click on the link below or copy paste in your search engine
 ```
