@@ -1,10 +1,24 @@
 # Inventory Management System
+Team Details:
+Vaibhav Rana(2210992488)
+
+Project Title: 
+Inventory-Management-System(MERN)
+
+Type:
+Research Paper
 
 A web app to help you manage your products, sales, purchases, and sellers — all in one place.
 
-> ⚠️ **Note:** The live site is currently not available. You'll need to run it locally (see instructions below).
+
 
 ---
+## 3. Live Link
+
+To view the website click on the link below or copy paste in your search engine
+```
+http://localhost:5173
+```
 
 ## Built With
 
