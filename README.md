@@ -17,7 +17,7 @@ A web app to help you manage your products, sales, purchases, and sellers — al
 
 To view the website click on the link below or copy paste in your search engine
 ```
-http://localhost:5173
+https://inventory-management-system-vert-theta.vercel.app
 ```
 
 ## Built With
